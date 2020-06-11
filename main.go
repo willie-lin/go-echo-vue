@@ -22,6 +22,8 @@ func main() {
 
 	e.File("/","public/index.html")
 
+	e.GET("/ips/:ip", handlers.GetIpInfo())
+
 	e.GET("/tasks", handlers.GetTasks())
 	e.GET("/tasks/:id", handlers.FindTaskById())
 

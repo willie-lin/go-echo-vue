@@ -59,7 +59,7 @@ func PutTask(task Task) *Task  {
 	//_ = json.Unmarshal([]byte(js), &ta)
 	//fmt.Println(ta)
 
-	result := db.FirstOrCreate(&t)
+	result := db.Create(&t)
 
 	//result := db.Create(&t)
 
